@@ -77,8 +77,8 @@ class Mat2 {
         out.x = this.m00 * x + this.m01 * y;
         out.y = this.m10 * x + this.m11 * y;
       } else if (x.x) {
-        out.x = this.m00 * x.x + this.m01 * x.y;
-        out.y = this.m10 * x.x + this.m11 * x.y;
+        y.x = this.m00 * x.x + this.m01 * x.y;
+        y.y = this.m10 * x.x + this.m11 * x.y;
       }
       return out;
     } else {
